@@ -21,6 +21,7 @@ resource "Spaces", :type => :api do
       field :auditor_guids, "The list of the associated auditors"
       field :domain_guids, "The list of the associated domains"
       field :security_group_guids, "The list of the associated security groups"
+      field :space_quota_definition, "The guid of the associated space quota definition"
     end
 
     standard_model_list :space, VCAP::CloudController::SpacesController
